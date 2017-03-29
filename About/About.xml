@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Stuffed Workbenches</name>
+  <author>cucumpear</author>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>Overrides most vanilla workbenches and allowes them to be built out of various materials. Also allows them to be minified.</description>
+</ModMetaData>
