@@ -1003,6 +1003,14 @@
       <Flammability>1.0</Flammability>
       <ResearchSpeedFactor>0.6</ResearchSpeedFactor>
     </statBases>
+	<comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ANON2FileCabinet</li>
+          <li>StatueOfAthena</li>
+        </linkableFacilities>
+      </li>
+    </comps>
     <fillPercent>0.5</fillPercent>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <hasInteractionCell>true</hasInteractionCell>
@@ -1058,7 +1066,9 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>MultiAnalyzer</li>
-        </linkableFacilities>
+          <li>ANON2FileCabinet</li>
+          <li>StatueOfAthena</li>
+	  </linkableFacilities>
       </li>
     </comps>
     <fillPercent>0.5</fillPercent>
