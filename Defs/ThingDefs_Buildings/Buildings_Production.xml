@@ -1006,7 +1006,6 @@
 	<comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
-          <li>ANON2FileCabinet</li>
           <li>StatueOfAthena</li>
         </linkableFacilities>
       </li>
@@ -1066,7 +1065,6 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>MultiAnalyzer</li>
-          <li>ANON2FileCabinet</li>
           <li>StatueOfAthena</li>
 	  </linkableFacilities>
       </li>
@@ -1084,6 +1082,52 @@
     <researchPrerequisites>
       <li>MicroelectronicsBasics</li>
     </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>StatueOfAthena</defName>
+    <label>statue of Athena</label>
+    <description>Increases research speed by encouraging the reseacher's scientific curiosity. Needs to be placed near research benches.</description>
+    <graphicData>
+      <texPath>Facilities/StatueOfAthena</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <rect>(0.15,0.15,1.7,1.7)</rect>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>Stonecutting</li></researchPrerequisites>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationHotkey>Misc4</designationHotkey>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Mass>100</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costStuffCount>120</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <ResearchSpeedFactor>0.15</ResearchSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+      </li>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
   </ThingDef>
 
 </ThingDefs>
