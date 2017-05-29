@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[DefName = "TableSculpting"]/stuffCategories</xpath>
+	  <value>
+				<li>Stony</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[DefName = "TableButcher"]/stuffCategories</xpath>
+	  <value>
+				<li>Stony</li>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[DefName = "HandTailoringBench"]/stuffCategories</xpath>
+	  <value>
+				<li>Stony</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[DefName = "ElectricTailoringBench"]/stuffCategories</xpath>
+	  <value>
+				<li>Stony</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[DefName = "TableStonecutter"]/stuffCategories</xpath>
+	  <value>
+				<li>Stony</li>
+	  </value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[DefName = "DrugLab"]/stuffCategories</xpath>
+	  <value>
+				<li>Stony</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[defName = "HiTechResearchBench"]/stuffCategories</xpath>
+	  <value>
+				<li>Stony</li>
+				<li>Woody</li>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[defName = "HiTechResearchBench"]//linkableFacilities</xpath>
+	  <value><li>StatueOfAthena</li></value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="PatchOperationTest">
+		  <xpath>*/ThingDef[defName = "SimpleResearchBench"]//linkableFacilities</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationInsert">
+			<xpath>/ThingDefs/ThingDef[defName = "SimpleResearchBench"]/label</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_AffectedByFacilities">
+						<linkableFacilities>
+						</linkableFacilities>
+					</li>
+				</comps>
+			</value>
+		</li>
+	  </operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[defName = "SimpleResearchBench"]//linkableFacilities</xpath>
+	  <value><li>StatueOfAthena</li></value>
+	</Operation>
+	
+</Patch>
