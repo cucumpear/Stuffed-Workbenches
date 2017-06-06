@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
@@ -51,60 +50,5 @@
 	  <xpath>*/ThingDef[defName = "ComponentAssemblyBench"]/graphicData/texPath</xpath>
 	  <value><texPath>Workbenches/ComponentAssemblyBench</texPath></value>
 	</Operation> 
-	
-=======
-<?xml version="1.0" encoding="utf-8" ?>
-<Patch>
 
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[defName = "PodLauncher"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/PodLauncher</texPath></value>
-	</Operation> 
-
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[defName = "ToolCabinet"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/ToolCabinet</texPath></value>
-	</Operation> 
-
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[DefName = "FueledSmithy"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/TableSmithingFueled</texPath></value>
-	</Operation> 
-
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[DefName = "ElectricSmithy"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/TableSmithingElectric</texPath></value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[DefName = "TableMachining"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/TableMachining</texPath></value>
-	</Operation> 
-
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[defName = "ElectricStove"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/TableStoveElectric</texPath></value>
-	</Operation> 
-
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[defName = "FueledStove"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/TableStoveFueled</texPath></value>
-	</Operation> 
-
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[DefName = "Brewery"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/TableBrewery</texPath></value>
-	</Operation> 
-	
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[DefName = "ElectricSmelter"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/ElectricSmelter</texPath></value>
-	</Operation> 
-
-	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[defName = "ComponentAssemblyBench"]/graphicData/texPath</xpath>
-	  <value><texPath>Workbenches/ComponentAssemblyBench</texPath></value>
-	</Operation> 
-	
->>>>>>> f21f7c87f6f3e4b148098c9cd2baf5f7e21b3829
 </Patch>

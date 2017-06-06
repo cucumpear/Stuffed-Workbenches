@@ -3,7 +3,6 @@
   <name>Stuffed Workbenches</name>
   <author>cucumpear</author>
   <targetVersion>0.17.0</targetVersion>
-<<<<<<< HEAD
   <description>This mod uses xpath patching to tweak cost lists and textures for vanilla workbenches (and a couple of extras) in order to make them buildable from various materials.
 For those that already had partial "stuff" support I left the vanilla textures and only added the missing stuff types.
 I cobbled together shaded white textures for the rest. Sadly the brewery was much too busy to get a decent base texture out of it, so I ended up making a completely new texture for it. (Disclaimer: I'm not that good at artsy things.)
@@ -26,7 +25,4 @@ Fueled/Electric Stove
 Brewery
 Electric Smelter
 Component Assembly Bench</description>
-=======
-  <description>Overrides most vanilla workbenches and allowes them to be built out of various materials.</description>
->>>>>>> f21f7c87f6f3e4b148098c9cd2baf5f7e21b3829
 </ModMetaData>
