@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationReplace">
 	  <xpath>*/ThingDef[defName = "PodLauncher"]/graphicData/texPath</xpath>
 	  <value><texPath>Workbenches/PodLauncher</texPath></value>
